@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1878CCD821969C6700504DCE /* newCocoapod.h in Headers */ = {isa = PBXBuildFile; fileRef = 1878CCD621969C6700504DCE /* newCocoapod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1878CCDF21969C8B00504DCE /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878CCDE21969C8B00504DCE /* service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1878CCD321969C6700504DCE /* newCocoapod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = newCocoapod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1878CCD621969C6700504DCE /* newCocoapod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newCocoapod.h; sourceTree = "<group>"; };
 		1878CCD721969C6700504DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1878CCDE21969C8B00504DCE /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				1878CCD621969C6700504DCE /* newCocoapod.h */,
+				1878CCDE21969C8B00504DCE /* service.swift */,
 				1878CCD721969C6700504DCE /* Info.plist */,
 			);
 			path = newCocoapod;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					1878CCD221969C6700504DCE = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1878CCDF21969C8B00504DCE /* service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		1878CCDC21969C6700504DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jd.-SampleLearning.newCocoapod";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		1878CCDD21969C6700504DCE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
